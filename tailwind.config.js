@@ -8,10 +8,20 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      screens: {
+          "small" : {"max" : "374px"},
+          "medium" : {"min" : "375px" , "max":"768px"},
+          "large" : {"min" : "769px", "max": "1020px" },
+          "extraL" : {"min" : "1021px"},
+      },
+      fontFamily: {
+        lex : ["Lexend"]
+      },
+       
+      gradientColorStops: {
+          "bg-test" : " linear-gradient(270deg, rgba(25, 25, 25, 0) 0%, #191919 105.84%)",
+      }
     },
   },
   plugins: [],
