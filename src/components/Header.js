@@ -34,7 +34,7 @@ export default function Header() {
               <Image
                 src={LOGO}
                 alt=""
-                className="small:w-4/5 mt-2"
+                className="small:w-4/5 mt-2 cursor-pointer"
                 width=""
                 height=""
               />
@@ -62,38 +62,40 @@ export default function Header() {
                     <ul className="space-y-5 mt-16 ">
                       {Data.map((item) => {
                         return (
-                          
-                            <li
-                              key={item.id}
-                              className="cursor-pointer text-left mx-10 "
+                          <li
+                            key={item.id}
+                            className="cursor-pointer text-left mx-10 "
+                          >
+                            <Link
+                              onClick={() => setMenu(!menu)}
+                              href={item.href}
+                              className={
+                                path === item.href
+                                  ? " underline underline-offset-2 rounded-[82px]"
+                                  : ""
+                              }
                             >
-                              <Link
-                                onClick={() => setMenu(!menu)}
-                                href={item.href}
-                                className={
-                                  path === item.href
-                                    ? " underline underline-offset-2 rounded-[82px]"
-                                    : ""
-                                }
-                              >
-                                {item.name}
-                              </Link>
-                            </li>
-                          
+                              {item.name}
+                            </Link>
+                          </li>
                         );
                       })}
 
-                      <li key="signin" className="cursor-pointer mt-2">
-                        <div className="mx-auto bg-[rgb(205,255,51)] text-black px-[24px] py-[12px] rounded-[82px] w-1/2">
-                          <Link href="/signup">Sign Up</Link>
-                        </div>
-                      </li>
+                      <Link href="/signup">
+                        <li key="signin" className="cursor-pointer mt-2">
+                          <div className="mx-auto bg-[rgb(205,255,51)] text-black px-[24px] py-[12px] rounded-[82px] w-1/2">
+                            Sign Up
+                          </div>
+                        </li>
+                      </Link>
 
-                      <li key="login" className=" cursor-pointer mt-2 ">
-                        <div className=" mx-auto bg-[rgb(205,255,51)] text-black px-[24px] py-[12px] rounded-[82px] w-1/2  ">
-                          <Link href="/login">Login</Link>
-                        </div>
-                      </li>
+                      <Link href="/login">
+                        <li key="login" className=" cursor-pointer mt-2 ">
+                          <div className=" mx-auto bg-[rgb(205,255,51)] text-black px-[24px] py-[12px] rounded-[82px] w-1/2  ">
+                            Login
+                          </div>
+                        </li>
+                      </Link>
                     </ul>
                   </div>
                 </>
@@ -116,20 +118,18 @@ export default function Header() {
             <ul className="flex mt-3 small:hidden medium:hidden space-x-5 ">
               {Data.map((item) => {
                 return (
-                  
-                    <li key={item.id}  className="justify-between">
-                      <Link
-                        className={
-                          path === item.href
-                            ? "bg-[rgb(38,38,38)] px-[18px] py-[10px] rounded-[82px]"
-                            : ""
-                        }
-                        href={item.href}
-                      >
-                        {item.name}
-                      </Link>
-                    </li>
-                  
+                  <li key={item.id} className="justify-between cursor-pointer" >
+                    <Link
+                      className={
+                        path === item.href
+                          ? "bg-[rgb(38,38,38)] px-[18px] py-[10px] rounded-[82px]"
+                          : ""
+                      }
+                      href={item.href}
+                    >
+                      {item.name}
+                    </Link>
+                  </li>
                 );
               })}
             </ul>
@@ -137,15 +137,17 @@ export default function Header() {
 
           <div>
             <ul className="mt-3 small:hidden medium:hidden space-x-5 flex">
-              <li key="signinnav">
-                <Link href="/signup">Sign Up</Link>
-              </li>
+              <Link href="/signup" className="cursor-pointer">
+                <li key="signinnav">Sign Up</li>
+              </Link>
 
-              <li key="loginnav">
-                <div className=" bg-[rgb(205,255,51)] text-black px-[24px] py-[12px] rounded-[82px] -mt-[13px]">
-                  <Link href="/login">Login</Link>
-                </div>
-              </li>
+              <Link href="/login" className="cursor-pointer">
+                <li key="loginnav">
+                  <div className=" bg-[rgb(205,255,51)] text-black px-[24px] py-[12px] rounded-[82px] -mt-[13px]">
+                    Login
+                  </div>
+                </li>
+              </Link>
             </ul>
           </div>
         </div>

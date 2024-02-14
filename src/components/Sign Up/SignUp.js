@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Image from "next/image";
 import Eye from "../../../public/assets/eye.svg";
 import Google from "../../../public/assets/google.svg";
@@ -55,7 +56,7 @@ export default function SignUp() {
           </form>
 
           <div>
-            <h1 className="text-center underline underline-offset-4 text-[14px] extraL:text-[18px] large:text-[16px]">
+            <h1 className="text-center underline underline-offset-4 text-[14px] extraL:text-[18px] large:text-[16px] cursor-pointer">
               Forgot Password?
             </h1>
           </div>
@@ -64,9 +65,9 @@ export default function SignUp() {
 
           <Link
                 href="/signup"
-                className="extraL:w-1/2 medium:w-1/2 large:w-44 small:w-full"
+                className="cursor-pointer extraL:w-1/2 medium:w-1/2 large:w-44 small:w-full"
             >
-            <button className="w-full extraL:px-[20px] extraL:py-[18px] px-[24px] py-[14px]  text-center text-[14px] extraL:text-[18px]    rounded-[62px] bg-[rgb(202,255,51,100%)] text-black  border-[1px] border-[rgb(51,51,51)]" >
+            <button className="cursor-pointer w-full extraL:px-[20px] extraL:py-[18px] px-[24px] py-[14px]  text-center text-[14px] extraL:text-[18px]    rounded-[62px] bg-[rgb(202,255,51,100%)] text-black  border-[1px] border-[rgb(51,51,51)]" >
               
                 Sign Up
               
@@ -106,21 +107,21 @@ export default function SignUp() {
                 alt=""
                 width="auto"
                 height=""
-                className="small:w-[50px] medium:w-[60px] extraL:w-[90px] large:w-[70px]"
+                className="cursor-pointer small:w-[50px] medium:w-[60px] extraL:w-[90px] large:w-[70px]"
               />
               <Image
                 src={Facebook}
                 alt=""
                 width="auto"
                 height=""
-                className="small:w-[50px] medium:w-[60px] extraL:w-[90px] large:w-[70px]"
+                className="cursor-pointer small:w-[50px] medium:w-[60px] extraL:w-[90px] large:w-[70px]"
               />
               <Image
                 src={Apple}
                 alt=""
                 width="auto"
                 height=""
-                className="small:w-[50px] medium:w-[60px] extraL:w-[90px] large:w-[70px]"
+                className="cursor-pointer small:w-[50px] medium:w-[60px] extraL:w-[90px] large:w-[70px]"
               />
             </div>
           </div>
