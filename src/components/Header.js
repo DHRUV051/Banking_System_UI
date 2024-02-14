@@ -85,7 +85,7 @@ export default function Header() {
 
                       <li key="signin" className="cursor-pointer mt-2">
                         <div className="mx-auto bg-[rgb(205,255,51)] text-black px-[24px] py-[12px] rounded-[82px] w-1/2">
-                          <Link href="/signin">Sign in</Link>
+                          <Link href="/signup">Sign Up</Link>
                         </div>
                       </li>
 
