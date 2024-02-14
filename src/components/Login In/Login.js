@@ -11,7 +11,7 @@ export default function Login() {
       <div className="relative bg-[url('/Login.svg')] bg-no-repeat bg-cover p-[30px] large:px-[80px] large:py-[80px] extraL:px-[150px] extraL:py-[100px] border-[1px] border-[rgb(38,38,38)] rounded-[26px] w-full h-full">
         <div
           className="absolute inset-0  ml-auto bg-no-repeat bg-right-top bg-cover w-[167px] h-[159px] extraL:scale-[2.0] extraL:top-[85px] extraL:right-[85px] "
-          style={{ backgroundImage: `url('/Abstract Design.svg')` }}
+          style={{ backgroundImage: `url('/AbstractDesign1.svg')` }}
         ></div>
 
         <div className=" flex flex-col justify-center items-center">
