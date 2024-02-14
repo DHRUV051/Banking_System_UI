@@ -2,7 +2,7 @@ export default function OurValue() {
   return (
     <>
       <div>
-        <h1 className="small:text-center medium:text-center large:text-left extraL:text-left text-[24px] large:text-[28px] extraL:text-[38px]">
+        <h1 className="small:text-center medium:text-center large:text-left extraL:text-left text-[24px] large:text-[38px] extraL:text-[48px]">
           Our <span className="text-[rgb(202,255,51,100%)] ">Values</span>
         </h1>
 
@@ -16,7 +16,7 @@ export default function OurValue() {
       </div>
 
       {/* Values */}
-      <div className="mt-[50px] small:space-y-[50px] medium:space-y-[50px] large:grid large:grid-cols-2 large:gap-[60px] extraL:grid extraL:grid-cols-2 extraL:gap-[80px]">
+      <div className="mt-[50px] small:space-y-[50px] medium:space-y-[50px] large:grid large:grid-cols-2 large:gap-[60px] extraL:grid extraL:grid-cols-2 extraL:gap-[80px] ">
 
         <div className="flex h-fit space-x-[20px]">
           <div className="flex items-center justify-center">
@@ -24,7 +24,7 @@ export default function OurValue() {
           </div>
 
           <div className="space-y-[14px] large:space-y-[20px] extraL:space-y-[30px]">
-            <h1 className="text-[30px] large:text-[40px] extraL:text-[58px] text-[rgb(76,76,77,100%)]">
+            <h1 className="text-[30px] large:text-[40px] extraL:text-[50px] text-[rgb(76,76,77,100%)]">
               Integrity
             </h1>
             <p className="text-[14px] large:text-[16px] extraL:text-[18px] font-light text-[rgb(179,179,179,100%)] ">
@@ -42,7 +42,7 @@ export default function OurValue() {
           </div>
 
           <div className="space-y-[14px] large:space-y-[20px] extraL:space-y-[30px]">
-            <h1 className="text-[30px] large:text-[40px] extraL:text-[58px] text-[rgb(76,76,77,100%)]">
+            <h1 className="text-[30px] large:text-[40px] extraL:text-[50px] text-[rgb(76,76,77,100%)]">
             Customer Centricity
             </h1>
             <p className="text-[14px] large:text-[16px] extraL:text-[18px] font-light text-[rgb(179,179,179,100%)] ">
@@ -58,7 +58,7 @@ export default function OurValue() {
           </div>
 
           <div className="space-y-[14px] large:space-y-[20px] extraL:space-y-[30px]">
-            <h1 className="text-[30px] large:text-[40px] extraL:text-[58px] text-[rgb(76,76,77,100%)]">
+            <h1 className="text-[30px] large:text-[40px] extraL:text-[50px] text-[rgb(76,76,77,100%)]">
             Collaboration
             </h1>
             <p className="text-[14px] large:text-[16px] extraL:text-[18px] font-light text-[rgb(179,179,179,100%)] ">
@@ -74,7 +74,7 @@ export default function OurValue() {
           </div>
 
           <div className="space-y-[14px] large:space-y-[20px] extraL:space-y-[30px]">
-            <h1 className="text-[30px] large:text-[40px] extraL:text-[58px] text-[rgb(76,76,77,100%)]">
+            <h1 className="text-[30px] large:text-[40px] extraL:text-[50px] text-[rgb(76,76,77,100%)]">
             Innovation
             </h1>
             <p className="text-[14px] large:text-[16px] extraL:text-[18px] font-light text-[rgb(179,179,179,100%)] ">

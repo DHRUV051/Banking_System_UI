@@ -14,7 +14,7 @@ export default function CareersIntro() {
               alt=""
               width=""
               height=""
-              className="w-full  mx-auto large:w-[80%]  extraL:w-2/3 extraL:ml-auto extraL:order-last static bg-transparent "
+              className="w-full  mx-auto large:w-[80%]  extraL:w-[60%] extraL:ml-auto extraL:order-last static bg-transparent "
             />
             {/* large:w-2/3 large:ml-auto large:order-last */}
 
@@ -22,7 +22,7 @@ export default function CareersIntro() {
               className="relative mx-auto bg-[rgb(26,26,26,100%)] w-full p-[24px] -mt-[41px] 
             h-fit rounded-[20px] 
                 large:w-[80%]  large:p-[60px]
-             extraL:-mr-[260px] extraL:z-10 extraL:w-1/2 extraL:p-[80px] extraL:rounded-br-[60px] extraL:rounded-tl-[20px] extraL:rounded-bl-[20px] extraL:rounded-tr-none extraL:-mt-0"
+             extraL:-mr-[206px] extraL:z-10 extraL:w-1/2 extraL:p-[80px] extraL:rounded-br-[60px] extraL:rounded-tl-[20px] extraL:rounded-bl-[20px] extraL:rounded-tr-none extraL:-mt-0"
             >
 
                 {/*  large:rounded-br-[60px] large:rounded-tl-[20px] large:rounded-bl-[20px] large:rounded-tr-none large:-mr-[175px] large:z-10 large:w-1/2 large:-mt-0 */}

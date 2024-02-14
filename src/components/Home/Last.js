@@ -6,7 +6,7 @@ import CTA1 from "../../../public/CTA1.svg";
 export default function Last() {
   return (
     <>
-      <div className=" relative border-[1px] border-[rgb(38,38,38)] p-[30px] extraL:p-[80px] large:p-[60px] bg-[rgb(28,28,28)] rounded-[20px]">
+      <div className="relative border-[1px] border-[rgb(38,38,38)] p-[30px] extraL:p-[80px] large:p-[60px] bg-[rgb(28,28,28)] rounded-[20px]">
 
         <div className="absolute top-0 left-0 extraL:bottom-0 large:bottom-0">
           <Image
