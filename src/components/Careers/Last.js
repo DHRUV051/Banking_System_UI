@@ -26,4 +26,8 @@ export default function Last() {
       </div>
     </>
   );
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 2610c1a3621586e70e5aab5bdcef589fb28fba40
