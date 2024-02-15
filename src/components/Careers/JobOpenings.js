@@ -30,11 +30,11 @@ export default function JobOpenings() {
           </h1>
 
           <div className="mt-[6px] extraL:flex large:flex extraL:space-x-[10px] large:space-x-[8px] small:space-y-[6px] medium:space-y-[6px]">
-            <div className=" bg-[rgb(26,26,26,100%)] border-[1px] border-[rgb(38,38,38,100%)] px-[10px] py-[6px] rounded-[66px] text-[rgb(179,179,179,100%)]  font-light text-[14px] large:text-[16px] extraL:text-[18px] overflow-auto w-full text-nowrap">
+            <div className="medium:w-fit bg-[rgb(26,26,26,100%)] border-[1px] border-[rgb(38,38,38,100%)] px-[10px] py-[6px] rounded-[66px] text-[rgb(179,179,179,100%)]  font-light text-[14px] large:text-[16px] extraL:text-[18px] overflow-auto w-full text-nowrap">
               <span>Location: India</span>
             </div>
 
-            <div className="bg-[rgb(26,26,26,100%)] border-[1px] border-[rgb(38,38,38,100%)] px-[10px] py-[6px] w-full rounded-[66px] text-[rgb(179,179,179,100%)]  font-light text-[14px] large:text-[16px] extraL:text-[18px] overflow-auto text-nowrap">
+            <div className=" medium:w-fit bg-[rgb(26,26,26,100%)] border-[1px] border-[rgb(38,38,38,100%)] px-[10px] py-[6px] w-full rounded-[66px] text-[rgb(179,179,179,100%)]  font-light text-[14px] large:text-[16px] extraL:text-[18px] overflow-auto text-nowrap">
               Department: Retail Banking
             </div>
           </div>
@@ -115,11 +115,11 @@ export default function JobOpenings() {
           </h1>
 
           <div className="mt-[6px] extraL:flex large:flex extraL:space-x-[10px] large:space-x-[8px] small:space-y-[6px] medium:space-y-[6px]">
-            <div className=" bg-[rgb(26,26,26,100%)] border-[1px] border-[rgb(38,38,38,100%)] px-[10px] py-[6px] rounded-[66px] text-[rgb(179,179,179,100%)]  font-light text-[14px] large:text-[16px] extraL:text-[18px] overflow-auto w-full text-nowrap">
+            <div className="medium:w-fit bg-[rgb(26,26,26,100%)] border-[1px] border-[rgb(38,38,38,100%)] px-[10px] py-[6px] rounded-[66px] text-[rgb(179,179,179,100%)]  font-light text-[14px] large:text-[16px] extraL:text-[18px] overflow-auto w-full text-nowrap">
               <span>Location: India</span>
             </div>
 
-            <div className="bg-[rgb(26,26,26,100%)] border-[1px] border-[rgb(38,38,38,100%)] px-[10px] py-[6px] w-full rounded-[66px] text-[rgb(179,179,179,100%)]  font-light text-[14px] large:text-[16px] extraL:text-[18px] overflow-auto text-nowrap">
+            <div className="medium:w-fit bg-[rgb(26,26,26,100%)] border-[1px] border-[rgb(38,38,38,100%)] px-[10px] py-[6px] w-full rounded-[66px] text-[rgb(179,179,179,100%)]  font-light text-[14px] large:text-[16px] extraL:text-[18px] overflow-auto text-nowrap">
               Department: Risk Management
             </div>
           </div>
@@ -200,11 +200,11 @@ export default function JobOpenings() {
           </h1>
 
           <div className="mt-[6px] extraL:flex large:flex extraL:space-x-[10px] large:space-x-[8px] small:space-y-[6px] medium:space-y-[6px]">
-            <div className=" bg-[rgb(26,26,26,100%)] border-[1px] border-[rgb(38,38,38,100%)] px-[10px] py-[6px] rounded-[66px] text-[rgb(179,179,179,100%)]  font-light text-[14px] large:text-[16px] extraL:text-[18px] overflow-auto w-full text-nowrap">
+            <div className="medium:w-fit bg-[rgb(26,26,26,100%)] border-[1px] border-[rgb(38,38,38,100%)] px-[10px] py-[6px] rounded-[66px] text-[rgb(179,179,179,100%)]  font-light text-[14px] large:text-[16px] extraL:text-[18px] overflow-auto w-full text-nowrap">
               <span>Location: India</span>
             </div>
 
-            <div className="bg-[rgb(26,26,26,100%)] border-[1px] border-[rgb(38,38,38,100%)] px-[10px] py-[6px] w-full rounded-[66px] text-[rgb(179,179,179,100%)]  font-light text-[14px] large:text-[16px] extraL:text-[18px] overflow-auto text-nowrap">
+            <div className="medium:w-fit bg-[rgb(26,26,26,100%)] border-[1px] border-[rgb(38,38,38,100%)] px-[10px] py-[6px] w-full rounded-[66px] text-[rgb(179,179,179,100%)]  font-light text-[14px] large:text-[16px] extraL:text-[18px] overflow-auto text-nowrap">
               Department: Information Technology
             </div>
           </div>
@@ -265,8 +265,8 @@ export default function JobOpenings() {
               <div className="space-x-[8px] extraL:space-x-[10px] flex">
                 <Image src={Bag} alt="" width="" height="" />
                 <p className="font-extralight text-[rgb(179,179,179)] text-[14px] large:text-[16px] extraL:text-[18px]">
-                  Familiarity with regulatory frameworks such as PCI DSS and
-                  GDPR
+                  Professional certifications such as CISSP or CISM are
+                  preferred
                 </p>
               </div>
             </div>
