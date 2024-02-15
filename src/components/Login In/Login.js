@@ -42,7 +42,8 @@ export default function Login() {
                 >
                   <input
                     type="password"
-                    name="Paaword"
+                    name="Password"
+                    autoComplete="on"
                     placeholder="Enter Your Password"
                     className="bg-transparent focus:outline-none extraL:text-[18px] text-[16px] font-light"
                   />
