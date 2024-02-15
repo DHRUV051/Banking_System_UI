@@ -1,11 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
 
-.row-border{
-    .row-border{
-        border-top: 2px solid gray;
-        grid-column: 1 / 5; /* this code makes the row stretch to entire width of the container */
-    }
-}
+
 
 @tailwind base;
 @tailwind components;

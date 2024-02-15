@@ -91,17 +91,17 @@ export default function Footer() {
               <Image src={Linkedin} alt="" width="" height="" />
             </div>
 
-            <diV className="pt-[30px] small:pt-[10px] medium:pt-[10px]">
+            <div className="pt-[30px] small:pt-[10px] medium:pt-[10px]">
               <h1 className="text-[rgb(173,179,179)] text-[14px] large:text-[16px] extraL:text-[18px] extraL:-mt-[20px] large:-mt-[20px] ">
                 YourBank All Rights Reserved
               </h1>
-            </diV>
+            </div>
 
-            <diV className="pt-[30px] small:pt-[10px] medium:pt-[10px]">
+            <div className="pt-[30px] small:pt-[10px] medium:pt-[10px]">
               <h1 className="text-[rgb(173,179,179)] text-[14px] large:text-[18px] extraL:text-[18px] extraL:-mt-[20px] large:-mt-[20px]">
                 Privacy Policy | Terms of Service
               </h1>
-            </diV>
+            </div>
           </div>
         </div>
       </div>

@@ -64,7 +64,7 @@ export default function Product() {
             </h1>
             <p className="text-[14px]  text-[rgb(179,179,179)] large:text-[16px] extraL:text-[18px] mt-2">
               Build your savings with our competitive interest rates and
-              flexible savings account options. Whether you're saving for a
+              flexible savings account options. Whether you&apos;re saving for a
               specific goal or want to grow your wealth over time, we have the
               right account for you.
             </p>

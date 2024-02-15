@@ -9,10 +9,7 @@ export default function Login() {
   return (
     <>
       <div className="relative bg-[url('/Login.svg')] bg-no-repeat bg-cover p-[30px] large:px-[80px] large:py-[80px] extraL:px-[150px] extraL:py-[100px] border-[1px] border-[rgb(38,38,38)] rounded-[26px] w-full h-full">
-        <div
-          className="absolute inset-0  ml-auto bg-no-repeat bg-right-top bg-cover w-[167px] h-[159px] extraL:scale-[2.0] extraL:top-[85px] extraL:right-[85px] "
-          style={{ backgroundImage: `url('/AbstractDesign1.svg')` }}
-        ></div>
+        <div className="absolute inset-0  ml-auto bg-no-repeat bg-right-top bg-cover w-[167px] h-[159px] extraL:scale-[2.0] extraL:top-[85px] extraL:right-[85px] bg-url('/AbstractDesign1.svg')"></div>
 
         <div className=" flex flex-col justify-center items-center">
           <h1 className="text-[rgb(202,255,51)] font-medium text-[28px] large:text-[38px] extraL:text-[48px] text-center">
@@ -62,29 +59,23 @@ export default function Login() {
           </div>
 
           <div className="mt-[24px] large:mt-[30px] extraL:mt-[40px] flex flex-col justify-center  items-center space-y-[24px]">
-
-          <Link
-                href="/login"
-                className="cursor-pointer extraL:w-1/2 medium:w-1/2 large:w-44 small:w-full"
+            <Link
+              href="/login"
+              className="cursor-pointer extraL:w-1/2 medium:w-1/2 large:w-44 small:w-full"
             >
-            <button className="w-full extraL:px-[20px] extraL:py-[18px] px-[24px] py-[14px]  text-center text-[14px] extraL:text-[18px]    rounded-[62px] bg-[rgb(202,255,51,100%)] text-black  border-[1px] border-[rgb(51,51,51)]" >
-              
+              <button className="w-full extraL:px-[20px] extraL:py-[18px] px-[24px] py-[14px]  text-center text-[14px] extraL:text-[18px]    rounded-[62px] bg-[rgb(202,255,51,100%)] text-black  border-[1px] border-[rgb(51,51,51)]">
                 Login
-              
-            </button>
+              </button>
             </Link>
 
             <Link
-                href="/signup"
-                className="cursor-pointer extraL:w-1/2 medium:w-1/2 large:w-44 small:w-full"
+              href="/signup"
+              className="cursor-pointer extraL:w-1/2 medium:w-1/2 large:w-44 small:w-full"
             >
-            <button className="w-full extraL:px-[20px] extraL:py-[18px] px-[24px] py-[14px]  text-center text-[14px] extraL:text-[18px]  bg-[rgb(38,38,38,100%)]  rounded-[62px]  border-[1px] border-[rgb(51,51,51)]" >
-              
+              <button className="w-full extraL:px-[20px] extraL:py-[18px] px-[24px] py-[14px]  text-center text-[14px] extraL:text-[18px]  bg-[rgb(38,38,38,100%)]  rounded-[62px]  border-[1px] border-[rgb(51,51,51)]">
                 Sign Up
-              
-            </button>
+              </button>
             </Link>
-
           </div>
 
           <div className="mt-[24px] large:mt-[30px] extraL:mt-[40px] mx-auto extraL:w-full large:w-full ">

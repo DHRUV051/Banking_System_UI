@@ -28,7 +28,7 @@ export default function FAQ(){
                     
                 </div>
                 <p className="pt-[20px] text-[14px] text-[rgb(179,179,179)] large:text-[14px] extraL:text-[18px]">
-                The documents required for a loan application may vary depending on the type of loan you are applying for. Generally, you will need to provide identification documents (such as a passport or driver's license), proof of income (such as pay stubs or tax returns), and information about the collateral (if applicable). Our loan officers will guide you through the specific requirements during the application process.
+                The documents required for a loan application may vary depending on the type of loan you are applying for. Generally, you will need to provide identification documents (such as a passport or driver&apos;`s license), proof of income (such as pay stubs or tax returns), and information about the collateral (if applicable). Our loan officers will guide you through the specific requirements during the application process.
                 </p>
             </div>
 
@@ -44,7 +44,7 @@ export default function FAQ(){
                 <p className="pt-[20px] text-[14px] text-[rgb(179,179,179)] large:text-[14px] extraL:text-[18px]  extraL:ml-8 extraL:mr-8 
                 large:ml-8 large:mr-8 
                 ">
-                Accessing your accounts online is simple and secure. Visit our website and click on the "Login" button. Enter your username and password to access your accounts. If you haven't registered for online banking, click on the "Enroll Now" button and follow the registration process. If you need assistance, our customer support team is available to guide you.
+                Accessing your accounts online is simple and secure. Visit our website and click on the &quot;Login&quot; button. Enter your username and password to access your accounts. If you haven&apos;t registered for online banking, click on the &quot;Enroll Now&quot; button and follow the registration process. If you need assistance, our customer support team is available to guide you.
                 </p>
                 </div>
             </div>
@@ -69,7 +69,7 @@ export default function FAQ(){
             
             <div className=" flex flex-col justify-center items-center">
                 <button className=" border-[1px] border-[rgb(38,38,38)] bg-[rgb(28,28,28)] rounded-[10px] px-[20px] py-[14px]">
-                    Load All FAQ's
+                    Load All FAQ&apos;s
                 </button>
             </div>
         

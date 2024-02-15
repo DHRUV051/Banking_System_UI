@@ -58,12 +58,11 @@ export default function JobOpenings() {
             <h1 className="font-semibold text-[18px] large:text-[20px] extraL:text-[24px]">
               Requirements & Qualifications
             </h1>
-
             <div className="space-y-[14px] extraL:space-y-[20px]">
               <div className="space-x-[8px] extraL:space-x-[10px] flex">
                 <Image src={Bag} alt="" width="" height="" />
                 <p className="font-extralight text-[rgb(179,179,179)] text-[14px] large:text-[16px] extraL:text-[18px]">
-                  Bachelor's degree in Business, Finance, or a related field
+                  Bachelor&apos;s degree in Business, Finance, or a related field
                 </p>
               </div>
 
@@ -147,7 +146,7 @@ export default function JobOpenings() {
               <div className="space-x-[8px] extraL:space-x-[10px] flex">
                 <Image src={Bag} alt="" width="" height="" />
                 <p className="font-extralight text-[rgb(179,179,179)] text-[14px] large:text-[16px] extraL:text-[18px]">
-                  Bachelor's degree in Business, Finance, or a related field
+                  Bachelor&apos;s degree in Business, Finance, or a related field
                 </p>
               </div>
 
@@ -233,7 +232,7 @@ export default function JobOpenings() {
               <div className="space-x-[8px] extraL:space-x-[10px] flex">
                 <Image src={Bag} alt="" width="" height="" />
                 <p className="font-extralight text-[rgb(179,179,179)] text-[14px] large:text-[16px] extraL:text-[18px]">
-                  Bachelor's degree in Computer Science, Information Security,
+                  Bachelor&apos;s degree in Computer Science, Information Security,
                   or a related field
                 </p>
               </div>

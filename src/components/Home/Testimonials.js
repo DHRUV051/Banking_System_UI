@@ -92,7 +92,7 @@ export default function Testimonials() {
 
             <div>
               <p className="text-center mt-[25px] text-[14px] large:text-[16px] extraL:text-[18px] leading-[21px] large:leading-[24px] extraL:leading-[27px]">
-              I love the convenience of YourBank's mobile banking app. It allows me to stay on top of my finances and make transactions on the go. The app is user-friendly and secure, giving me peace of mind.
+              I love the convenience of YourBank&apos;s mobile banking app. It allows me to stay on top of my finances and make transactions on the go. The app is user-friendly and secure, giving me peace of mind.
               </p>
             </div>
 
