@@ -7,7 +7,7 @@ export default function Last() {
         <div className="extraL:flex large:flex">
           <div className="relative extraL:w-9/12 space-y-[14px] large:space-y-[10px]">
             <h1 className="small:text-center medium:text-center  text-[24px] large:text-[30px] extraL:text-[36px] ">
-              Start your financial journey with{" "}
+              Start your Career with{" "}
               <span className="text-[rgb(202,255,51)]">YourBank today!</span>
             </h1>
             <p className="font-lex font-thin text-[rgb(179,179,179)] small:text-center medium:text-center">
