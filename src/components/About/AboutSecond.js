@@ -18,7 +18,7 @@ export default function AboutSecond() {
         </p>
       </div>
 
-    <div className="mt-[60px] extraL:mt-[80px] small:space-y-[50px] medium:space-y-[60px]">
+    <div className="my-[60px]  extraL:my-[80px] small:space-y-[50px] medium:space-y-[60px]">
 
         {/* Mission Card */}
         <div className="flex medium:flex-col small:flex-col items-center justify-center">
