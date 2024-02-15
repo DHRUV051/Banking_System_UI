@@ -23,7 +23,7 @@ export default function Last() {
             </button>
           </div>
         </div>
-     
+      </div>
     </>
   );
 }

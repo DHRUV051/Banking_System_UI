@@ -19,7 +19,7 @@ export default function PressReleases() {
         </p>
       </div>
 
-      <div className="space-y-[20px] extraL:space-y-0 large:space-y-0 extraL:grid extraL:grid-cols-2 extraL:gap-[30px] large:grid large:grid-cols-2 large:gap-[20px]">
+      <div className="space-y-[20px] extraL:space-y-0 large:space-y-0 extraL:grid extraL:grid-cols-2 extraL:gap-[30px] large:grid large:grid-cols-2 large:gap-[0px]">
 
             <div className="bg-[rgb(28,28,28)] border-[1px] border-[rgb(38,38,38)] p-[20px] extraL:p-[30px] large:p-[24px] rounded-tl-[40px] rounded-tr-[40px] rounded-bl-[16px] rounded-br-[16px] ">
 
