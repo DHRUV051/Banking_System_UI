@@ -2,8 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 
 import Verify from "../../../public/assets/verify.svg";
-import Home2 from "../../../public/assets/home1.svg";
-import Home3 from "../../../public/assets/home3.svg";
+import Home2 from "../../../public/assets/Home1.svg";
+import Home3 from "../../../public/assets/Home3.svg";
 
 export default function Introduction() {
   return (
