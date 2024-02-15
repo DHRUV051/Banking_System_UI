@@ -1,5 +1,5 @@
 import Image from "next/image";
-import CardBG from "../../../public/assets/Careers/CardBG.svg";
+
 import Icon1 from "../../../public/assets/Careers/Icon1.svg";
 import Icon2 from "../../../public/assets/Careers/Icon2.svg";
 import Icon3 from "../../../public/assets/Careers/Icon3.svg";
@@ -8,7 +8,7 @@ import Icon4 from "../../../public/assets/Careers/Icon4.svg";
 export default function Benefits() {
   return (
     <>
-      <div>
+      <div className="space-y-[10] extraL:space-y-[20px]">
         <h1 className="small:text-center medium:text-center large:text-left extraL:text-left text-[24px] large:text-[38px] extraL:text-[48px]">
           Our <span className="text-[rgb(202,255,51,100%)] ">Benefits</span>
         </h1>

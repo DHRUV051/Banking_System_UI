@@ -10,11 +10,13 @@ export default function Careers(){
         <>
             <div className="space-y-[50px]">
                 <CareersIntro/>
+                <div className="space-y-[50px] relative">
                 <OurValue/>
                 <Benefits/>
                 <JobOpenings/>
                 <FAQ/>
                 <Last/>
+                </div>
             </div>
         </>
     )

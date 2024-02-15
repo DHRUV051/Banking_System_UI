@@ -66,7 +66,7 @@ export default function Footer() {
               </div>
             </div>
 
-            <div className="small:mt-[15px]">    
+            <div className="small:mt-[15px] medium:mt-[15px]">    
             <div className="flex space-x-2  justify-center items-center ">
               <Image src={Location} alt="" width="auto" />
               <h1 className="text-[14px] large:text-[18px] extraL:text-[18px]">
@@ -91,13 +91,13 @@ export default function Footer() {
               <Image src={Linkedin} alt="" width="" height="" />
             </div>
 
-            <diV className="pt-[30px]">
+            <diV className="pt-[30px] small:pt-[10px] medium:pt-[10px]">
               <h1 className="text-[rgb(173,179,179)] text-[14px] large:text-[16px] extraL:text-[18px] extraL:-mt-[20px] large:-mt-[20px] ">
                 YourBank All Rights Reserved
               </h1>
             </diV>
 
-            <diV className="pt-[30px]">
+            <diV className="pt-[30px] small:pt-[10px] medium:pt-[10px]">
               <h1 className="text-[rgb(173,179,179)] text-[14px] large:text-[18px] extraL:text-[18px] extraL:-mt-[20px] large:-mt-[20px]">
                 Privacy Policy | Terms of Service
               </h1>

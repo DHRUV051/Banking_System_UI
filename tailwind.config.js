@@ -14,6 +14,7 @@ module.exports = {
           "medium" : {"min" : "375px" , "max":"768px"},
           "large" : {"min" : "769px", "max": "1020px" },
           "extraL" : {"min" : "1021px"},
+          "extraLarge":{"min" : "1021px","max":"1215px"},
       },
       fontFamily: {
         lex : ["Lexend"]

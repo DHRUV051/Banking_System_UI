@@ -26,7 +26,7 @@ export default function Header() {
           priority={true}
           width=""
           height=""
-          className="absolute top-0 left-0 extraL:w-1/3 large:w-1/3 "
+          className="absolute top-0 left-0 extraL:w-1/3 large:w-1/3 small:w-2/3 medium:w-2/3"
         />
         <div className="relative bg-[rgb(26,26,26)] py-[20px] px-[34px] flex justify-between rounded-[100px] large:space-x-1 pt-[20px] border-t-[1px] border-b-[1px] border-[rgb(38,38,38)] align-middle">
           <div>
@@ -34,7 +34,7 @@ export default function Header() {
               <Image
                 src={LOGO}
                 alt=""
-                className="small:w-4/5 mt-2 cursor-pointer"
+                className="small:w-4/5 large:w-4/5 mt-2 cursor-pointer"
                 width=""
                 height=""
               />
@@ -115,7 +115,7 @@ export default function Header() {
 
           {/* Navbar */}
           <div>
-            <ul className="flex mt-3 small:hidden medium:hidden space-x-5 ">
+            <ul className="flex mt-3 large:mt-[13px] small:hidden medium:hidden space-x-5 ">
               {Data.map((item) => {
                 return (
                   <li key={item.id} className="justify-between cursor-pointer" >
@@ -136,7 +136,7 @@ export default function Header() {
           </div>
 
           <div>
-            <ul className="mt-3 small:hidden medium:hidden space-x-5 flex">
+            <ul className="mt-3 large:mt-[13px] small:hidden medium:hidden space-x-5 flex">
               <Link href="/signup" className="cursor-pointer">
                 <li key="signinnav">Sign Up</li>
               </Link>

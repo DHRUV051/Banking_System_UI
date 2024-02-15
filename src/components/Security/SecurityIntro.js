@@ -1,7 +1,7 @@
 import Image from "next/image";
-import Intro from "../../../public/assets/Careers/Intro1.svg";
+import Intro from "../../../public/assets/Security/Intro1.svg";
 
-export default function CareersIntro() {
+export default function SecurityIntro() {
   return (
     <>
       <div className="bg-[rgb(28,28,28)] rounded-[20px]">
@@ -15,7 +15,7 @@ export default function CareersIntro() {
                 alt=""
                 width=""
                 height=""
-                className="small:mx-auto medium:w-[90%] medium:mx-auto extraL:w-full extraL:ml-auto large:w-full large:ml-auto  static bg-transparent extraLarge:w-full extraLarge:ml-auto " 
+                className="small:mx-auto medium:w-[90%] medium:mx-auto extraL:w-full extraL:ml-auto large:w-full large:ml-auto  static bg-transparent extraLarge:w-full extraLarge:ml-auto "
               />
             </div>
             {/* large:w-2/3 large:ml-auto large:order-last */}
@@ -35,20 +35,28 @@ export default function CareersIntro() {
               {/*  large:rounded-br-[60px] large:rounded-tl-[20px] large:rounded-bl-[20px] large:rounded-tr-none large:-mr-[175px] large:z-10 large:w-1/2 large:-mt-0 */}
               <div className="extraL:space-y-[23px] large:space-y-[20px] space-y-[14px]">
                 <h1 className="small:text-center medium:text-center text-[24px] large:text-[28px] extraL:text-[48px]">
-                  Welcome to{" "}
-                  <span className="text-[rgb(202,255,51,100%)]">YourBank</span>{" "}
-                  Careers!
+                  Your Security is Our{" "}
+                  <span className="text-[rgb(202,255,51,100%)]">
+                    Top Priority
+                  </span>{" "}
                 </h1>
 
                 <p className="text-[14px] extraL:text-[16px] font-light text-[rgb(179,179,179,100%)] small:text-center medium:text-center extraLarge:hidden">
-                At YourBank, we understand the importance of keeping your financial information secure. We employ robust security measures and advanced technologies to protect your personal and financial data. Rest assured that when you bank with us, your security is our utmost priority.
+                  Join our team and embark on a rewarding journey in the banking
+                  industry. At YourBank, we are committed to fostering a culture
+                  of excellence and providing opportunities for professional
+                  growth. With a focus on innovation, customer service, and
+                  integrity, we strive to make a positive impact in the lives of
+                  our customers and communities. Join us today and be a part of
+                  our mission to shape the future of banking.
                 </p>
 
                 <p className="extraL:text-[16px] font-light text-[rgb(179,179,179,100%)] small:hidden medium:hidden large:hidden extraL:hidden extraLarge:block ">
-                At YourBank, we understand the importance of keeping your financial information secure. We employ robust security measures.
+                  Join our team and embark on a rewarding journey in the banking
+                  industry. At YourBank, we are committed to fostering a culture
+                  of excellence and providing opportunities for professional
+                  growth.
                 </p>
-                
-
               </div>
             </div>
           </div>
@@ -56,4 +64,10 @@ export default function CareersIntro() {
       </div>
     </>
   );
+}
+
+{
+  /*
+
+*/
 }

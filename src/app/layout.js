@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <div className="bg-[rgb(26,26,26)] text-white font-lex">
           <Header />
-          <div className="relative bg-[rgb(26,26,26)] px-[16px] py-[30px] medium:px-[40px] medium:py-[40px] large:px-[80px] large:py-[80px] extraL:px-[100px] extraL:py-[80px] ">
+          <div className="relative bg-[rgb(26,26,26)] px-[16px] py-[30px] medium:px-[40px] medium:py-[40px] large:px-[40px] large:py-[80px] extraL:px-[100px] extraL:py-[80px] ">
             {children}
           </div>
           <Footer />
