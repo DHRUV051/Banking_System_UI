@@ -49,7 +49,7 @@ export default function Header() {
 
           <nav aria-label="Mobile Navbar ">
           
-          <div className="flex flex-col justify-end items-end">
+         
           <button
             onClick={() => setMenu(!menu)}
             className={
@@ -69,8 +69,7 @@ export default function Header() {
               height=""
             />
           </button>
-          </div>
-
+          
           <div 
             className={clsx(
               menu
