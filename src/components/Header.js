@@ -20,7 +20,8 @@ export default function Header() {
   return (
     <>
       {/* public\HeaderDesign.svg */}
-      <div className="pb-[30px] text-[14px] large:text-[16px] extraL:text-[18px]  bg-no-repeat py-[20px] px-[34px] small:px-[17px] small:py-[10px] relative ">
+      <header className="pb-[30px] text-[14px] large:text-[16px] extraL:text-[18px]  bg-no-repeat py-[20px] px-[34px] small:px-[17px] small:py-[10px] relative ">
+        
         <Image
           src={HeaderDesign}
           alt=""
@@ -30,7 +31,7 @@ export default function Header() {
           className="absolute top-0 left-0 extraL:w-1/3 large:w-1/3 small:w-2/3 medium:w-2/3"
         />
         <div className="relative bg-[rgb(26,26,26)] py-[20px] px-[34px] flex justify-between rounded-[100px] large:space-x-1 pt-[20px] border-t-[1px] border-b-[1px] border-[rgb(38,38,38)] align-middle">
-          <div>
+          <logo>
             <Link href="/">
               <Image
                 src={LOGO}
@@ -40,10 +41,12 @@ export default function Header() {
                 height=""
               />
             </Link>
-          </div>
+          </logo>
+        
 
           {/* Small and Medium */}
 
+          <nav aria-label="Mobile Navbar">
           <button
             onClick={() => setMenu(!menu)}
             className={
@@ -63,7 +66,7 @@ export default function Header() {
             />
           </button>
 
-          <div
+          <div 
             className={clsx(
               menu
                 ? "fixed top-0 left-0 h-screen z-50 w-screen large:hidden extraL:hidden bg-black/50 backdrop-blur-sm"
@@ -135,9 +138,10 @@ export default function Header() {
             </section>
            
           </div>
+          </nav>
 
           {/* Navbar */}
-          <div>
+          <nav aria-label="Navbar for Large Screen flex" >
             <ul className="flex mt-3 large:mt-[13px] small:hidden medium:hidden space-x-5 ">
               {Data.map((item) => {
                 return (
@@ -156,8 +160,13 @@ export default function Header() {
                 );
               })}
             </ul>
-          </div>
+       
+           
+          
+            
+          </nav>
 
+          
           <div>
             <ul className="mt-3 large:mt-[13px] small:hidden medium:hidden space-x-5 flex">
               <Link href="/signup" className="cursor-pointer">
@@ -173,8 +182,9 @@ export default function Header() {
               </Link>
             </ul>
           </div>
+
         </div>
-      </div>
+      </header>
     </>
   );
 }
