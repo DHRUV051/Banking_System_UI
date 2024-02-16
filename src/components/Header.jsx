@@ -30,7 +30,8 @@ export default function Header() {
           height=""
           className="absolute top-0 left-0 extraL:w-1/3 large:w-1/3 small:w-2/3 medium:w-2/3"
         />
-        <div className="relative bg-[rgb(26,26,26)] py-[20px] px-[34px] flex justify-between rounded-[100px] large:space-x-1 pt-[20px] border-t-[1px] border-b-[1px] border-[rgb(38,38,38)] align-middle">
+        
+        <div className="relative bg-[rgb(26,26,26)] py-[20px] px-[34px] flex justify-between rounded-[100px] large:space-x-1 pt-[20px] border-t-[1px] border-b-[1px] border-[rgb(38,38,38)]">
           <logo>
             <Link href="/">
               <Image
@@ -46,25 +47,29 @@ export default function Header() {
 
           {/* Small and Medium */}
 
-          <nav aria-label="Mobile Navbar">
+          <nav aria-label="Mobile Navbar ">
+          
+          <div className="flex flex-col justify-end items-end">
           <button
             onClick={() => setMenu(!menu)}
             className={
               menu
                 ? "extraL:hidden large:hidden"
-                : "extraL:hidden large:hidden bg-[rgb(202,255,51)]  px-[14px] py-[5px] rounded-[82px] small:px-[8px] ml-auto mb-auto h-fit w-fit  mt-2"
+                : "extraL:hidden large:hidden bg-[rgb(202,255,51)] px-[14px] py-[5px] rounded-[82px] small:px-[8px]  items-end h-fit w-fit  mt-2 "
             }
           >
+            
             <Image
               src={Menu}
               alt=""
               className={clsx(
-                menu ? "hidden " : "small:w-2/3 mx-auto  w-fit h-fit"
+                menu ? "hidden" : "small:w-2/3 ml-auto  w-fit h-fit"
               )}
               width=""
               height=""
             />
           </button>
+          </div>
 
           <div 
             className={clsx(
@@ -138,11 +143,12 @@ export default function Header() {
             </section>
            
           </div>
+
           </nav>
 
           {/* Navbar */}
-          <nav aria-label="Navbar for Large Screen flex" >
-            <ul className="flex mt-3 large:mt-[13px] small:hidden medium:hidden space-x-5 ">
+          <nav aria-label="Navbar for Large Screen " className="small:hidden medium:hidden" >
+            <ul className="flex mt-3 large:mt-[13px]  space-x-5 ">
               {Data.map((item) => {
                 return (
                   <li key={item.id} className="justify-between cursor-pointer">
@@ -167,7 +173,7 @@ export default function Header() {
           </nav>
 
           
-          <div>
+          <div className="small:hidden medium:hidden">
             <ul className="mt-3 large:mt-[13px] small:hidden medium:hidden space-x-5 flex">
               <Link href="/signup" className="cursor-pointer">
                 <li key="signinnav">Sign Up</li>
