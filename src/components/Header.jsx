@@ -63,7 +63,7 @@ export default function Header() {
               src={Menu}
               alt=""
               className={clsx(
-                menu ? "hidden" : "small:w-2/3 ml-auto  w-fit h-fit"
+                menu ? "hidden" : "small:w-2/3 mx-auto  w-fit h-fit"
               )}
               width=""
               height=""
