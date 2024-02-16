@@ -10,6 +10,7 @@ import LOGO from "../../public/assets/Logo.svg";
 import Menu from "../../public/assets/menu.svg";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
+import clsx from "clsx";
 
 export default function Header() {
   const [menu, setMenu] = useState(false);
@@ -42,75 +43,86 @@ export default function Header() {
           </div>
 
           {/* Small and Medium */}
-          <div
+
+          <button
+            onClick={() => setMenu(!menu)}
             className={
               menu
                 ? "extraL:hidden large:hidden"
-                : "extraL:hidden large:hidden bg-[rgb(202,255,51)]  px-[14px] rounded-[82px] small:px-[8px]   ml-auto mb-auto h-fit w-fit z-10 mt-2  "
+                : "extraL:hidden large:hidden bg-[rgb(202,255,51)]  px-[14px] rounded-[82px] small:px-[8px] ml-auto mb-auto h-fit w-fit  mt-2"
             }
           >
-            <button onClick={() => setMenu(!menu)}>
-              {menu ? (
-                <>
-                  <div className="fixed bg-[rgb(26,26,26)] inset-0 medium:w-1/2 medium:ml-auto medium:opacity-[0.99] z-10 small:opacity-[0.99] scroll-auto ">
-                    <div className="fixed right-10 top-10">
-                      <button onClick={() => setMenu(!menu)}>
-                        <HiOutlineXMark className="text-[30px]" />
-                      </button>
-                    </div>
-
-                    <ul className="space-y-5 mt-16 ">
-                      {Data.map((item) => {
-                        return (
-                          <li
-                            key={item.id}
-                            className="cursor-pointer text-left mx-10 "
-                          >
-                            <Link
-                              onClick={() => setMenu(!menu)}
-                              href={item.href}
-                              className={
-                                path === item.href
-                                  ? " underline underline-offset-2 rounded-[82px]"
-                                  : ""
-                              }
-                            >
-                              {item.name}
-                            </Link>
-                          </li>
-                        );
-                      })}
-
-                      <Link href="/signup">
-                        <li key="signin" className="cursor-pointer mt-2">
-                          <div className="mx-auto bg-[rgb(205,255,51)] text-black px-[24px] py-[12px] rounded-[82px] w-1/2">
-                            Sign Up
-                          </div>
-                        </li>
-                      </Link>
-
-                      <Link href="/login">
-                        <li key="login" className=" cursor-pointer mt-2 ">
-                          <div className=" mx-auto bg-[rgb(205,255,51)] text-black px-[24px] py-[12px] rounded-[82px] w-1/2  ">
-                            Login
-                          </div>
-                        </li>
-                      </Link>
-                    </ul>
-                  </div>
-                </>
-              ) : (
-                <>
-                  <Image
-                    src={Menu}
-                    alt=""
-                    className="small:w-2/3 mx-auto mt-2 w-fit h-fit "
-                    width=""
-                    height=""
-                  />
-                </>
+            <Image
+              src={Menu}
+              alt=""
+              className={clsx(
+                menu ? "hidden " : "small:w-2/3 mx-auto mt-2 w-fit h-fit"
               )}
-            </button>
+              width=""
+              height=""
+            />
+          </button>
+
+          <div
+            className={clsx(
+              menu
+                ? "fixed top-0 left-0 h-screen z-50 w-screen large:hidden extraL:hidden bg-black/50 backdrop-blur-sm  translate-x-0 transition-all ease-in-out  duration-75 "
+                : "translate-x-full  duration-75 -z-50 fixed top-0 left-0 h-screen  w-screen large:hidden extraL:hidden bg-black/50 backdrop-blur-sm"
+            )}
+          >
+            <section
+              className={clsx(
+                "text-black bg-[rgb(38,38,38)] flex-col  fixed right-0 top-0 h-screen p-8 gap-8 z-50 medium:w-1/2  small:w-full flex"
+              )}
+            >
+              <button className="mt-0 mb-5 text-3xl cursor-pointer ml-auto">
+                <HiOutlineXMark
+                  onClick={() => setMenu(!menu)}
+                  className="text-white"
+                />
+              </button>
+
+              <div>
+                <ul className="flex flex-col justify-center text-white space-y-5 tracking-normal">
+                  {Data.map((item) => {
+                    return (
+                      <li
+                        key={item.id}
+                        className="justify-between cursor-pointer "
+                      >
+                        <Link
+                          className={
+                            path === item.href
+                              ? " underline underline-offset-2 rounded-[82px] font-semibold"
+                              : ""
+                          }
+                          href={item.href}
+                          onClick={() => setMenu(!menu)}
+                        >
+                          {item.name}
+                        </Link>
+                      </li>
+                    );
+                  })}
+
+                  <Link href="/signup">
+                    <li key="signin" className="cursor-pointer mt-2">
+                      <div className="mx-auto bg-[rgb(205,255,51)] text-black px-[24px] py-[12px] rounded-[82px] w-1/2 medium:w-36 text-center">
+                        Sign Up
+                      </div>
+                    </li>
+                  </Link>
+
+                  <Link href="/login">
+                    <li key="login" className=" cursor-pointer mt-2 ">
+                      <div className=" mx-auto bg-[rgb(205,255,51)] text-black px-[24px] py-[12px] rounded-[82px] w-1/2  medium:w-36 text-center">
+                        Login
+                      </div>
+                    </li>
+                  </Link>
+                </ul>
+              </div>
+            </section>
           </div>
 
           {/* Navbar */}
@@ -118,7 +130,7 @@ export default function Header() {
             <ul className="flex mt-3 large:mt-[13px] small:hidden medium:hidden space-x-5 ">
               {Data.map((item) => {
                 return (
-                  <li key={item.id} className="justify-between cursor-pointer" >
+                  <li key={item.id} className="justify-between cursor-pointer">
                     <Link
                       className={
                         path === item.href
