@@ -49,14 +49,14 @@ export default function Header() {
             className={
               menu
                 ? "extraL:hidden large:hidden"
-                : "extraL:hidden large:hidden bg-[rgb(202,255,51)]  px-[14px] rounded-[82px] small:px-[8px] ml-auto mb-auto h-fit w-fit  mt-2"
+                : "extraL:hidden large:hidden bg-[rgb(202,255,51)]  px-[14px] py-[5px] rounded-[82px] small:px-[8px] ml-auto mb-auto h-fit w-fit  mt-2"
             }
           >
             <Image
               src={Menu}
               alt=""
               className={clsx(
-                menu ? "hidden " : "small:w-2/3 mx-auto mt-2 w-fit h-fit"
+                menu ? "hidden " : "small:w-2/3 mx-auto  w-fit h-fit"
               )}
               width=""
               height=""
@@ -66,24 +66,30 @@ export default function Header() {
           <div
             className={clsx(
               menu
-                ? "fixed top-0 left-0 h-screen z-50 w-screen large:hidden extraL:hidden bg-black/50 backdrop-blur-sm  translate-x-0 transition-all ease-in-out  duration-75 "
-                : "translate-x-full  duration-75 -z-50 fixed top-0 left-0 h-screen  w-screen large:hidden extraL:hidden bg-black/50 backdrop-blur-sm"
+                ? "fixed top-0 left-0 h-screen z-50 w-screen large:hidden extraL:hidden bg-black/50 backdrop-blur-sm"
+                : " large:hidden extraL:hidden"
             )}
           >
+            
             <section
               className={clsx(
-                "text-black bg-[rgb(38,38,38)] flex-col  fixed right-0 top-0 h-screen p-8 gap-8 z-50 medium:w-1/2  small:w-full flex"
-              )}
-            >
+                menu ?
+                " translate-x-0 transition-all text-white bg-[rgb(38,38,38)] flex-col  fixed right-0 top-0 h-screen medium:w-1/2 w-full p-8 gap-8 z-50 flex" : 
+                
+                "text-white bg-[rgb(38,38,38)] p-8 gap-8 flex flex-col  translate-x-full -z-50 transition-all  top-0 right-0  w-full h-full  fixed "
+             ,"ease-in-out  duration-[500ms] "  )}
+            > 
+              
+              
               <button className="mt-0 mb-5 text-3xl cursor-pointer ml-auto">
                 <HiOutlineXMark
                   onClick={() => setMenu(!menu)}
-                  className="text-white"
+                  className={clsx( menu ? "" : "relative top-0 right-0 left-0")}
                 />
               </button>
 
-              <div>
-                <ul className="flex flex-col justify-center text-white space-y-5 tracking-normal">
+            
+                <ul className={clsx( "flex flex-col justify-center space-y-5 tracking-normal text-lg " )  }>
                   {Data.map((item) => {
                     return (
                       <li
@@ -105,7 +111,8 @@ export default function Header() {
                     );
                   })}
 
-                  <Link href="/signup">
+                  
+                  <Link href="/signup"  onClick={() => setMenu(!menu)}>
                     <li key="signin" className="cursor-pointer mt-2">
                       <div className="mx-auto bg-[rgb(205,255,51)] text-black px-[24px] py-[12px] rounded-[82px] w-1/2 medium:w-36 text-center">
                         Sign Up
@@ -113,16 +120,20 @@ export default function Header() {
                     </li>
                   </Link>
 
-                  <Link href="/login">
+                  <Link href="/login"  onClick={() => setMenu(!menu)}>
                     <li key="login" className=" cursor-pointer mt-2 ">
                       <div className=" mx-auto bg-[rgb(205,255,51)] text-black px-[24px] py-[12px] rounded-[82px] w-1/2  medium:w-36 text-center">
                         Login
                       </div>
                     </li>
                   </Link>
+                 
                 </ul>
-              </div>
+
+             
+           
             </section>
+           
           </div>
 
           {/* Navbar */}
